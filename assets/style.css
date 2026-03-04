@@ -210,3 +210,83 @@ a:hover{opacity:.9}
   justify-content:space-between;
   flex-wrap:wrap;
 }
+
+
+
+.section {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #0f172a;
+  border-bottom: 3px solid #1e3a8a;
+  padding-bottom: 10px;
+}
+
+/* Timeline 主體 */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* 左側那條線 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #1e3a8a, #3b82f6);
+}
+
+/* 每個項目 */
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+/* 圓點 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -29px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-color: #1e3a8a;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #3b82f6;
+}
+
+/* 卡片內容 */
+.timeline-content {
+  background: #f8fafc;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content h3 {
+  margin: 0 0 8px 0;
+  color: #1e3a8a;
+}
+
+.timeline-date {
+  font-weight: 600;
+  font-size: 14px;
+  color: #475569;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #0f172a;
+}
