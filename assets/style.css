@@ -378,3 +378,60 @@ body {
   gap: 12px;
   flex-wrap: wrap;
 }
+
+
+/* =====================================
+   Highlights
+===================================== */
+
+.highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 10px;
+}
+
+.highlight-item {
+  position: relative;
+  padding: 18px 20px 18px 26px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  transition: all 0.25s ease;
+}
+
+.highlight-item:hover {
+  background: #e2e8f0;
+  transform: translateY(-3px);
+}
+
+/* 左側藍色標記線 */
+.highlight-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 4px;
+  height: calc(100% - 32px);
+  background: #1e3a8a;
+  border-radius: 2px;
+}
+
+.highlight-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.highlight-meta {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.highlight-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
