@@ -265,7 +265,7 @@ body {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .timeline-item::before {
