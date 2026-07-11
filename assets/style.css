@@ -477,3 +477,8 @@ body {
   gap: 10px;
   flex-wrap: wrap;
 }
+
+.bio-content {
+  min-height: 100px;
+  color: #475569;
+}
