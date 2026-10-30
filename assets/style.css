@@ -182,8 +182,34 @@ body {
   }
 
   .hero-profile .subtitle {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.6;
+  }
+
+  .hero-top {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .hero-profile .actions {
+    gap: 8px;
+  }
+
+  .hero-profile .btn {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .hero-profile .hint {
+    display: none;
+  }
+
+  .brand {
+    white-space: nowrap;
+  }
+
+  .links {
+    gap: 0;
   }
 }
 
